@@ -1,0 +1,44 @@
+﻿# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.log
+
+# Environnement virtuel
+venv/
+.venv/
+env/
+
+# Données locales
+data/
+temp/
+logs/
+
+# Fichiers générés par l'application
+generated_*.png
+generated_*.jpg
+generated_*.jpeg
+generated_*.wav
+generated_*.mp3
+generated_*.mp4
+
+# Tests / médias temporaires
+hf_test_flux.png
+test_image.png
+wan_zerogpu_test.mp4
+
+# Sauvegardes locales et anciennes versions
+versions/
+*_BACKUP_*.py
+*_BEFORE_*.py
+*_ERREUR_*.py
+*_PRE_*.py
+
+# Fichiers système
+.DS_Store
+Thumbs.db
