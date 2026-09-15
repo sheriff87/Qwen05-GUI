@@ -1,89 +1,118 @@
-﻿Qwen05-GUI
+# Qwen05-GUI
 
-Interface graphique locale et cloud pour travailler avec des modèles d'intelligence artificielle.
+<p align="center">
+  <strong>Local & Cloud AI Assistant GUI</strong>
+</p>
 
-Qwen05-GUI combine des modèles locaux via Ollama avec des services cloud optionnels.
+<p align="center">
+  A desktop-friendly AI interface powered by Ollama, Qwen, Groq, OpenRouter and Hugging Face.
+</p>
 
-Fonctionnalités
+---
 
-- Modèles locaux avec Ollama
-- Modèle de coding via Groq
-- Intégration Hugging Face
-- Chargement de fichiers
-- Support de fichiers texte et code
-- Streaming des réponses
-- Paramètres de génération
-- Contrôle des coûts cloud
+## 🖥️ Preview
 
-Prérequis
+<p align="center">
+  <img src="assets/qwen-gui-main0.PNG" alt="Qwen05-GUI main interface" width="900">
+</p>
 
-- Windows 10 ou supérieur
-- Python 3.10
-- Ollama
+<p align="center">
+  <img src="assets/qwen-gui-main1.PNG" alt="Qwen05-GUI interface" width="900">
+</p>
 
-Installation
+<p align="center">
+  <img src="assets/qwen-gui-main2.PNG" alt="Qwen05-GUI features" width="900">
+</p>
 
-Créer l'environnement Python :
+<p align="center">
+  <img src="assets/qwen-gui-main3.PNG" alt="Qwen05-GUI media interface" width="900">
+</p>
 
-py -3.10 -m venv .venv
+---
 
-Installer les dépendances :
+## ✨ Overview
 
-python -m pip install -r requirements.txt
+**Qwen05-GUI** is a local-first AI assistant interface designed to bring multiple AI capabilities together in a simple Gradio application.
 
-Lancement
+The project combines **local AI models** running through Ollama with selected **cloud AI services**, while keeping provider configuration and potential costs under control.
 
-Lancer l'application :
+The goal is to provide a practical environment for:
 
-py -3.10 -X faulthandler gradio_app_V4.py
+- 💬 AI conversations
+- 🧠 Local Qwen models
+- 💻 Coding assistance
+- ☁️ Cloud AI providers
+- 🎨 Image generation
+- 📁 File analysis
+- ⚡ Streaming responses
+- ⚙️ Model and generation parameters
 
-L'interface est disponible à :
+---
 
-http://127.0.0.1:7860
+## 🚀 Features
 
-Configuration
+### 🧠 Local AI — Ollama
 
-Les clés API sont fournies via des variables d'environnement.
+Run AI models locally on your own computer through Ollama.
 
-Variables utilisées :
+Benefits:
 
-OPENROUTER_API_KEY=
-GROQ_API_KEY=
-HF_TOKEN=
-OLLAMA_URL=http://127.0.0.1:11434
+- Local inference
+- No cloud API required for local models
+- Greater privacy
+- Works offline for supported features
+- Easy model switching
 
-Ne publiez jamais vos véritables clés API sur GitHub.
+Example local models include:
 
-Vous pouvez utiliser ".env.example" comme modèle de configuration.
+- Qwen
+- Qwen Coder
+- Other models supported by Ollama
 
-Sécurité
+---
 
-Les fichiers ".env", les logs, les fichiers temporaires, les médias générés et les sauvegardes locales sont exclus du dépôt Git.
+### 💻 Coding Assistant
 
-Les clés API doivent rester privées.
+Qwen Coder can be used for programming-related tasks such as:
 
-Architecture
+- Python
+- JavaScript
+- HTML
+- CSS
+- JSON
+- YAML
+- PowerShell
+- Batch
+- SQL
+- Configuration files
 
-Local
+Loaded source files can also be sent directly to the AI for analysis.
 
-Ollama permet d'utiliser les modèles IA directement sur l'ordinateur.
+---
 
-Cloud
+### ☁️ Cloud AI
 
-Les intégrations cloud sont optionnelles et peuvent être utilisées selon les besoins :
+Qwen05-GUI can connect to cloud providers when an API key is configured.
+
+Supported integrations include:
 
 - Groq
 - OpenRouter
 - Hugging Face
 
-Le projet est conçu pour séparer les modèles locaux des services cloud.
+Cloud services are kept separate from local Ollama models.
 
-État du projet
+This makes it possible to use local AI when possible and cloud AI when additional capabilities are required.
 
-Version actuelle : V4
+---
 
-Le projet est actuellement en développement.
+### 🎨 Hugging Face
 
-Licence
+Hugging Face is integrated for AI media capabilities.
 
-Licence open source à définir.
+The project can use Hugging Face models for supported generation tasks, including image generation.
+
+Example model:
+
+```text
+black-forest-labs/FLUX.1-schnell
