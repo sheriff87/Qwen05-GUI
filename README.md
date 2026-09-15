@@ -8,24 +8,23 @@
   A desktop-friendly AI interface powered by Ollama, Qwen, Groq, OpenRouter and Hugging Face.
 </p>
 
----
-
-## 🖥️ Preview
-
 <p align="center">
   <img src="assets/qwen-gui-main0.PNG" alt="Qwen05-GUI main interface" width="900">
 </p>
 
 <p align="center">
-  <img src="assets/qwen-gui-main1.PNG" alt="Qwen05-GUI interface" width="900">
-</p>
-
-<p align="center">
-  <img src="assets/qwen-gui-main2.PNG" alt="Qwen05-GUI features" width="900">
-</p>
-
-<p align="center">
-  <img src="assets/qwen-gui-main3.PNG" alt="Qwen05-GUI media interface" width="900">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://www.gradio.app/">
+    <img src="https://img.shields.io/badge/Gradio-6.27-orange" alt="Gradio">
+  </a>
+  <a href="https://ollama.com/">
+    <img src="https://img.shields.io/badge/Ollama-Local_AI-black" alt="Ollama">
+  </a>
+  <a href="https://github.com/sheriff87/Qwen05-GUI">
+    <img src="https://img.shields.io/github/stars/sheriff87/Qwen05-GUI?style=flat&logo=github" alt="GitHub Stars">
+  </a>
 </p>
 
 ---
@@ -36,16 +35,31 @@
 
 The project combines **local AI models** running through Ollama with selected **cloud AI services**, while keeping provider configuration and potential costs under control.
 
-The goal is to provide a practical environment for:
+### What it provides
 
 - 💬 AI conversations
 - 🧠 Local Qwen models
 - 💻 Coding assistance
 - ☁️ Cloud AI providers
 - 🎨 Image generation
-- 📁 File analysis
+- 📁 Multi-format file analysis
 - ⚡ Streaming responses
-- ⚙️ Model and generation parameters
+- ⚙️ Generation parameters
+- 🛡️ Cost-aware cloud usage
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/qwen-gui-main0.PNG" alt="Qwen05-GUI main interface" width="48%">
+  <img src="assets/qwen-gui-main1.PNG" alt="Qwen05-GUI interface" width="48%">
+</p>
+
+<p align="center">
+  <img src="assets/qwen-gui-main2.PNG" alt="Qwen05-GUI features" width="48%">
+  <img src="assets/qwen-gui-main3.PNG" alt="Qwen05-GUI media capabilities" width="48%">
+</p>
 
 ---
 
@@ -60,10 +74,10 @@ Benefits:
 - Local inference
 - No cloud API required for local models
 - Greater privacy
-- Works offline for supported features
+- Offline use for supported features
 - Easy model switching
 
-Example local models include:
+Example models include:
 
 - Qwen
 - Qwen Coder
@@ -102,15 +116,11 @@ Supported integrations include:
 
 Cloud services are kept separate from local Ollama models.
 
-This makes it possible to use local AI when possible and cloud AI when additional capabilities are required.
-
 ---
 
 ### 🎨 Hugging Face
 
-Hugging Face is integrated for AI media capabilities.
-
-The project can use Hugging Face models for supported generation tasks, including image generation.
+Hugging Face is integrated for supported AI media capabilities, including image generation.
 
 Example model:
 
